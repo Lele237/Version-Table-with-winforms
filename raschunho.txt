@@ -1,0 +1,73 @@
+// Uma dependência de pacotes é uma biblioteca de terceiros
+// adicionar pacote via CLI: dotnet add package <name of package>
+//dotnet help - lista detalhada de comandos
+
+/* runtime-options:
+  --additionalprobingpath <path>   Caminho contendo a política de investigação e os assemblies a investigar.
+  --additional-deps <path>         Caminho para o arquivo deps.json adicional.
+  --depsfile                       Caminho para o arquivo <application>.deps.json.
+  --fx-version <version>           Versão do Shared Framework instalada a ser usada para a execução do aplicativo.
+  --roll-forward <setting>         Role para frente para a versão de estrutura (LatestPatch, Minor, LatestMinor, Major, LatestMajor, Disable).
+  --runtimeconfig                  Caminho para o arquivo <application>. runtimeconfig.json.
+
+path-to-application:
+  O caminho para um arquivo .dll de aplicativo a ser executado.
+
+Uso: dotnet [sdk-options] [command] [command-options] [arguments]
+
+Execute um comando do SDK do .NET.
+
+sdk-options:
+  -d|--diagnostics  Habilitar saída de diagnóstico.
+  -h|--help         Mostrar a ajuda da linha de comando.
+  --info            Exiba informações do .NET.
+  --list-runtimes   Exiba os runtimes instalados.
+  --list-sdks       Exiba os SDKs instalados.
+  --version         Exiba a versão do SDK do .NET em uso.
+
+Comandos do SDK:
+  build             Criar um projeto do .NET.
+  build-server      Interagir com servidores iniciados por um build.
+  clean             Limpar as saídas do build de um projeto do .NET.
+  format            Aplicar preferências de estilo a um projeto ou solução.
+  help              Abre a página de referência em um navegador para o comando especificado.
+  msbuild           Executar comandos do MSBuild (Microsoft Build Engine).
+  new               Criar um novo projeto ou arquivo do .NET.
+  nuget             Fornece comandos adicionais do NuGet.
+  pack              Criar um pacote do NuGet.
+  package           Pesquise, adicione, remova ou liste PackageReferences para um projeto do .NET.
+  publish           Publicar um projeto do .NET para implantação.
+  reference         Adicione, remova ou liste ProjectReferences para um projeto do .NET.
+  restore           Restaurar as dependências especificadas em um projeto do .NET.
+  run               Criar e executar uma saída de projeto do .NET.
+  sdk               Gerencie a instalação do SDK do .NET.
+  solution          Modificar os arquivos da solução do Visual Studio.
+  store             Armazenar os assemblies especificados no repositório de pacotes do runtime.
+  test              Executar testes de unidade usando o executor de testes especificado em um projeto do .NET.
+  tool              Instalar ou gerenciar ferramentas que ampliam a experiência do .NET.
+  vstest            Executar comandos do VSTest (Microsoft Test Engine).
+  workload          Gerenciar as cargas de trabalho opcionais.
+
+Comandos adicionais de ferramentas em pacote:
+  dev-certs         Crie e gerencie certificados de desenvolvimento.
+  fsi               Iniciar F# Interativo / executar scripts do F#.
+  user-jwts         Gerenciar tokens da Web JSON em desenvolvimento.
+  user-secrets      Gerencie segredos do usuário de desenvolvimento.
+  watch             Inicie um observador de arquivo que executa um comando quando os arquivos são alterados.
+*/
+
+// dotnet tool install <name of package> : instalar ferramentas
+// dotnet new -i : instalar modelos
+// restaurar dependências : dotnet restore
+// remover: dotnet remove
+
+// dotnet list package --outdated --include-prerelease - verifica se uma nova versão da estrutura está disponível
+//dotnet list package --outdated - lista pacotes desatualizados
+//dotnet add package <package name> - atualiza para a última versão
+
+/* Tipo | Exemplo | Significado
+Major (Principal) | 1.0.0 → 2.0.0 | Alterações que podem quebrar o código existente.
+Minor (Secundária) | 1.2.0 → 1.3.0 | Adiciona funcionalidades sem quebrar o código existente.
+Patch (Correção) | 1.2.3 → 1.2.4 | Corrige bugs e problemas existentes. */
+
+// dotnet new winforms -n <nome da tabela> - Tecnologia .NET que permite a criação de aplicativos com interfaces gráficas para Windows utilizando o C#.
